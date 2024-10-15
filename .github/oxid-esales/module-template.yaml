@@ -14,7 +14,7 @@ install_shop_with_modules:
           "repositories": {
             "oxid-esales/module-template": {
               "type": "git",
-              "url": "https://github.com/kzemi-stock/oxid-credit.git"
+              "url": "https://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@github.com/kzemi-stock/oxid-credit.git"
             }
           }
       }
