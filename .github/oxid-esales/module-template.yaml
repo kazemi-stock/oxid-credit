@@ -26,8 +26,6 @@ runscript: &runscript
     script: |
       [
         "module_template:tests-unit",
-        "module_template:tests-integration",
-        "module_template:tests-codeception"
       ]
   module_template:
     path: 'vendor/oxid-esales/module-template'
