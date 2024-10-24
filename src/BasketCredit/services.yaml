@@ -1,0 +1,8 @@
+services:
+  _defaults:
+    public: false
+    autowire: true
+
+  OxidEsales\ModuleTemplate\BasketCredit\Service\CreditServiceInterface:
+    class: OxidEsales\ModuleTemplate\BasketCredit\Service\CreditService
+    public: true

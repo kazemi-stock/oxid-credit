@@ -1,0 +1,17 @@
+services:
+  _defaults:
+    public: false
+    autowire: true
+
+  OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherModelFactoryInterface:
+    class: OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherModelFactory
+    public: true
+
+  OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherSerieModelFactoryInterface:
+    class: OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherSerieModelFactory
+    public: true
+
+  OxidEsales\ModuleTemplate\Voucher\Service\VoucherServiceInterface:
+    class: OxidEsales\ModuleTemplate\Creations\Service\VoucherService
+    public: true
+
