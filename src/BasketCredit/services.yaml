@@ -3,6 +3,10 @@ services:
     public: false
     autowire: true
 
+  # Register the Basket model as a service
+  OxidEsales\Eshop\Application\Model\Basket:
+    public: true
+
   OxidEsales\ModuleTemplate\BasketCredit\Service\CreditServiceInterface:
     class: OxidEsales\ModuleTemplate\BasketCredit\Service\CreditService
     public: true
