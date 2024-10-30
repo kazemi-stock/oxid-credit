@@ -39,7 +39,7 @@ class CreditServiceTest extends TestCase
             $data['correctDiscount']
         );
 
-        $basketMock = oxNew(Basket::class);
+        $basketMock = $this->oxNew(Basket::class);
         $creditService = new CreditService($basketMock, $data['userId'], $data['correctDiscount']);
 
         $result = $creditService->applyCredit();
@@ -87,5 +87,10 @@ class CreditServiceTest extends TestCase
             'correctDiscount' => 100.0,
             'incorrectDiscount' => -0.0
         ];
+    }
+    
+    private function oxNew($class)
+    {
+        return new $class;
     }
 }
