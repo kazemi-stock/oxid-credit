@@ -9,6 +9,7 @@ declare(strict_types=1);
 
 namespace OxidEsales\ModuleTemplate\BasketCredit\Service;
 
+use OxidEsales\Eshop\Application\Model\Basket as EshopModelBasket;
 use OxidEsales\Eshop\Core\Exception\VoucherException;
 use OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherModelFactory;
 use OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherSerieModelFactory;
@@ -16,18 +17,19 @@ use OxidEsales\ModuleTemplate\Voucher\Service\VoucherService;
 
 class CreditService implements CreditServiceInterface
 {
-    private $oBasket;
+    /** @var EshopModelBasket  */
+    private EshopModelBasket $oBasket;
     private string $userId;
     private float $amount;
 
 
     /**
      * injection dependencies
-     * @param $oBasket
+     * @param EshopModelBasket $oBasket
      * @param string $userId
      * @param float $amount
      */
-    public function __construct($oBasket, string $userId, float $amount)
+    public function __construct(EshopModelBasket $oBasket, string $userId, float $amount)
     {
         $this->oBasket = $oBasket;
         $this->userId = $userId;
