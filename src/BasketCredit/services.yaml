@@ -6,3 +6,5 @@ services:
   OxidEsales\ModuleTemplate\BasketCredit\Service\CreditServiceInterface:
     class: OxidEsales\ModuleTemplate\BasketCredit\Service\CreditService
     public: true
+    arguments:
+      $oBasket: '@OxidEsales\Eshop\Application\Model\Basket'
