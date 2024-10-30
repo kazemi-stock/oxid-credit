@@ -11,8 +11,8 @@ namespace OxidEsales\ModuleTemplate\Voucher\Service;
 
 use OxidEsales\Eshop\Application\Model\Voucher;
 use OxidEsales\Eshop\Application\Model\VoucherSerie;
-use WebBakery\Credit\Voucher\Infrastructure\VoucherModelFactoryInterface;
-use WebBakery\Credit\Voucher\Infrastructure\VoucherSerieModelFactoryInterface;
+use OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherModelFactoryInterface;
+use OxidEsales\ModuleTemplate\Voucher\Infrastructure\VoucherSerieModelFactoryInterface;
 
 class VoucherService implements VoucherServiceInterface
 {
