@@ -17,7 +17,7 @@ use OxidEsales\ModuleTemplate\Voucher\Service\VoucherService;
 
 class CreditService implements CreditServiceInterface
 {
-    /** @var Basket  */
+    /** @var \OxidEsales\Eshop\Application\Model\Basket  */
     private Basket $oBasket;
     private string $userId;
     private float $amount;
