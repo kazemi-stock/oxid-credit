@@ -12,3 +12,5 @@ services:
     public: true
     arguments:
       $oBasket: '@OxidEsales\Eshop\Application\Model\Basket'
+      $userId: '_TestUserId' # replace with actual value or parameter
+      $amount: 0.0 # replace with actual default value or parameter
