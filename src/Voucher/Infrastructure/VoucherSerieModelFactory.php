@@ -16,7 +16,7 @@ class VoucherSerieModelFactory implements VoucherSerieModelFactoryInterface
     /**
      * Store and return VoucherSeries
      *
-     * @return VoucherSerie
+     * @return \OxidEsales\Eshop\Application\Model\VoucherSerie
      * @throws \Exception
      */
     public function create(float $discount): VoucherSerie

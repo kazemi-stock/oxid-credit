@@ -12,6 +12,6 @@ services:
     public: true
 
   OxidEsales\ModuleTemplate\Voucher\Service\VoucherServiceInterface:
-    class: OxidEsales\ModuleTemplate\Creations\Service\VoucherService
+    class: OxidEsales\ModuleTemplate\Voucher\Service\VoucherService
     public: true
 
