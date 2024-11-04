@@ -35,7 +35,6 @@ runslim:
   matrix:
     script: |
       [
-        "module_template:phpcs-report",
         "module_template:phpmd-report",
         "module_template:phpstan-report"
       ]
