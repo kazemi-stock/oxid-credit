@@ -14,7 +14,7 @@ install_shop_with_modules:
           "repositories": {
             "oxid-esales/module-template": {
               "type": "git",
-              "url": "https://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@github.com/kazemi-stock/oxid-credit.git"
+              "url": "https://github.com/OXID-eSales/module-template.git"
             }
           }
       }
@@ -26,6 +26,8 @@ runscript: &runscript
     script: |
       [
         "module_template:tests-unit",
+        "module_template:tests-integration",
+        "module_template:tests-codeception"
       ]
   module_template:
     path: 'vendor/oxid-esales/module-template'
